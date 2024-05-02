@@ -1,0 +1,11 @@
+#text-container {
+    width: 10%;
+    float: left;
+}
+
+#image-container img {
+    max-width: 10%;
+    height: 10%;
+}
+
+

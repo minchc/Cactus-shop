@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cactos</title>
+    <style>
+        body {
+            background: linear-gradient(180deg, rgba(13, 36, 13, 1) 0%, rgba(28, 68, 28, 1) 100%);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        #header {
+            background-color: rgb(13, 36, 13);
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #departments {
+            display: flex;
+        }
+
+        .department {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        #language {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        #shop {
+            background-color: orange;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact-info {
+            padding: 20px;
+        }
+
+        #contact-info p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">Cactos</div>
+        <div id="departments">
+            <div id="departments">
+                <div class="department"><a href="catalog.html">Каталог</a></div>
+                <div class="department"><a href="about.html">Про нас</a></div>
+                <div class="department"><a href="faq.html">FAQ</a></div>
+                <div class="department"><a href="contact.html">Контакты</a></div>
+            </div>
+        </div>
+        <div id="language" onclick="toggleLanguage()">русский | English</div>
+        <div id="shop">shop</div>
+    </header>
+    <hr>
+
+    <!-- Раздел контактов -->
+    <div id="contact-info">
+        <h2>Контактная информация</h2>
+        <p><strong>Адрес:</strong> г. Наш город, Алматы, улица Назарбаева 31А</p>
+        <p><strong>Телефон:</strong> +7 7077556787</p>
+        <p><strong>Email:</strong> minchc123@gmail.com</p>
+    </div>
+
+    <script src="toggleLanguage.js"></script>
+</body>
+
+</html>

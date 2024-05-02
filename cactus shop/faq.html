@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cactos</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: rgb(0, 0, 0);
+        }
+
+        #header {
+            background-color: rgb(13, 36, 13);
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #departments {
+            display: flex;
+        }
+
+        .department {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        #language {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        #shop {
+            background-color: orange;
+            color: rgb(7, 4, 4);
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #faq {
+            padding: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">Cactos</div>
+        <div id="departments">
+            <div id="departments">
+                <div class="department"><a href="catalog.html">Каталог</a></div>
+                <div class="department"><a href="about.html">Про нас</a></div>
+                <div class="department"><a href="faq.html">FAQ</a></div>
+                <div class="department"><a href="contact.html">Контакты</a></div>
+            </div>
+        </div>
+        <div id="language" onclick="toggleLanguage()">русский | English</div>
+        <div id="shop">shop</div>
+    </header>
+    <hr>
+
+    <!-- Раздел FAQ сразу после заголовка -->
+    <div id="faq">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="question">
+            <h3>Как часто нужно поливать кактус?</h3>
+            <p>Ответ: Частота полива зависит от сезона и типа кактуса. В среднем, летом кактусы нужно поливать раз в неделю, а зимой - реже, примерно раз в две-три недели.</p>
+        </div>
+        <div class="question">
+            <h3>Как правильно ухаживать за кактусом?</h3>
+            <p>Ответ: Кактусы требуют света, но избегайте прямых солнечных лучей, особенно в жаркие часы. Также важно обеспечить хорошую дренажную систему для почвы и избегать переувлажнения.</p>
+        </div>
+        <div class="question">
+            <h3>Могут ли кактусы цвести?</h3>
+            <p>Ответ: Да, многие виды кактусов могут цвести. Однако, условия цветения могут различаться в зависимости от вида, так что необходимо изучить требования вашего конкретного растения.</p>
+        </div>
+        <!-- Добавьте еще вопросы и ответы при необходимости -->
+    </div>
+
+    <script src="toggleLanguage.js"></script>
+</body>
+
+</html>
